@@ -43,7 +43,7 @@ bot.onText(/\/start/, (msg) => {
 
 bot.onText(/\/play/, (msg) => {
   const chatId = msg.chat.id;
-  const url = `https://your-app-name.herokuapp.com`; // Ganti dengan URL server Anda
+  const url = `https://idle-game-xdhk.vercel.app/`; // Ganti dengan URL server Anda
   bot.sendMessage(chatId, 'Click the button below to play the game:', {
     reply_markup: {
       inline_keyboard: [
