@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 const token = '7416524421:AAHmWLZOz3tmFHox7_-2IOgGNP1XqSCxdCg';
 const bot = new TelegramBot(token, { polling: true });
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/idle-game', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb+srv://uzumy15:8vTCZv8lheeziAjd@cluster0.y0vpphn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true });
 
 const userSchema = new mongoose.Schema({
   telegramId: String,
